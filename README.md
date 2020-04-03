@@ -1,2 +1,2 @@
 # MATLAB-playground
-Experiments and demonstration of the MATLAB software and language.
+Experiments and demonstrations of the MATLAB software and language.
