@@ -25,3 +25,29 @@ for ii = 1:length(readings)
     end
 end
 fprintf('First reading above 100 is at index %d.\n',ii);
+%% Example 4
+%Bad Break
+for ii = 1:size(A, 1)
+    for jj = 1:size(A,2)
+        if A(ii,jj) <= 90
+            A(ii,jj) = 0
+        else
+            break;
+        end
+    end
+end
+%% Example 5
+found = false;
+for ii = 1:size(A, 1)
+    for jj = 1:size(A,2)
+        if A(ii,jj) <= 90
+            A(ii,jj) = 0
+        else
+            found = true;
+            break;
+        end
+    end
+    if found
+        break;
+    end
+end
